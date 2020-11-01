@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500;600&display=swap');
+
+* {
+   box-sizing: border-box;
+   
+}
+
+body {
+    font-family: 'Noto Sans JP', Arial, Helvetica, sans-serif;
+    background: rgb(207,235,255);
+    background: linear-gradient(43deg, rgba(207,235,255,1) 0%, rgba(233,233,233,0.7453476607433858) 100%); 
+    color: rgb(97, 97, 97);
+    margin: 0;
+    padding: 0;
+}
+
+#home {
+    font-family: 'Sansita Swashed', Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+main {
+    background: white;
+    text-align: center;
+    
+}
+
+h2 {
+    padding-top: 3em;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+.main-header {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom:1.5em;
+}
+
+nav {
+    display: inline-block;
+    width: 95%;
+    max-width: 450px;
+}
+
+.main-nav {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    
+}
+
+.main-nav a {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: rgb(97, 97, 97);
+    text-decoration: none;
+    background-color: white;
+    margin-top: .25em;
+    padding: 10px;
+    
+    }
+
+
+.main-nav a:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(0,133,255);
+    background: linear-gradient(43deg, rgba(0,133,255,1) 0%, rgba(253,29,29,1) 84%, rgba(252,176,69,1) 96%); 
+    transition-duration: .3s;
+}
+/*== used css gradient generator at cssgradient.io==*/
+
+
+.profile {
+    margin-top: 2em;
+    display: inline-block;
+    
+}
+
+.responsive {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+}
+
+.portfolio,
+    .skills {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1em 0;
+}
+
+article p {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.portfolio-img {
+    max-width: 100%;
+    height: auto;
+    padding: 1em
+    
+}
+
+.skills {
+    color: rgb(0, 98, 179);
+    background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(238, 246, 253, 0.219));
+    margin-top: 2em;
+    box-shadow: 0px -5px 7px .5px rgb(224, 224, 224);
+    padding: 2em;
+    line-height: 1.5em;
+    width: 75%;
+    max-width: 450px;
+
+}
+
+.skills p {
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: .05em;
+}
+
+.skills ul {
+    margin-bottom: 0;
+}
+
+.contact {
+    display: block;
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 3em;
+    font-weight: 300;
+}
+
+.contact-item {
+    font-weight: 700;
+    margin-left: 1em;
+}
+
+footer {
+   border-top: .5px solid rgb(170, 170, 170);
+   width: 90%;
+   margin: 0 auto;
+   font-size: .7em;
+   font-weight: 600;
+   text-align: right;
+   padding: 2em 0;
+}
+
+.footer-nav {
+    list-style-type: none;    
+  }
+
+  .name,
+  .footer-nav,
+  .footer-nav li {
+    display: inline-block;
+}
+
+.footer-nav a {
+    text-transform: uppercase;
+    color: rgb(97, 97, 97);
+    text-decoration: none;
+}
+
+.name {
+    position: absolute;
+    left: 5%;
+}
+
+#homefooter,
+#portfoliofooter,
+#contactfooter {
+    display: none;
+}
+
+
+/* ===================Media queries ===============*/
+
+@media (min-width:768px) {
+/* =====top nav section===== */
+    nav,
+    nav li {
+        display: inline-block;
+        max-width: 600px;
+        margin: 0 1em;
+    }
+    
+    .main-nav {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        
+    }
+    
+    .main-nav a {
+        display: block;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.2em;
+        color: rgb(97, 97, 97);
+        background-color: rgb(245, 245, 245);
+        text-decoration: none;
+        margin-top: .25em;
+        padding: 10px;
+        
+        }
+
+/*======header=====*/
+.profile {
+    margin-top: 2em;
+    display: inline-block;
+  }
+
+.profile p {
+    display: inline-block;
+    font-weight: 300;
+    font-size: 1.25em;
+    margin-right: 1.5em;
+    text-align: left;
+    max-width: 55%;
+}
+
+.responsive {
+    width: 100%;
+    max-width: 40%;
+    height: auto;
+    float: right;
+}
+
+/*=====main=====*/
+
+.portfolio    {
+    max-width: 45%;
+    margin: 0 auto;
+    padding: 1.5em 0;
+    display: inline-block;
+    
+}
+
+.wrapper {
+ 
+}
+
+article p {
+    width: 80%;
+    margin: 0 auto;
+     
+}
+
+
+.portfolio-img {
+    max-width: 100%;
+    height: auto;
+    padding: .5em
+    
+    
+}
+
+.skills {
+    max-width: 600px;
+}
+
+/*=====contact=====*/
+.contact {
+    display: block;
+    max-width: 65%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 3em;
+    font-weight: 300;
+    font-size: 1.3em;
+}
+
+#contactheadline {
+    font-size: .8em;   
+}
+
+#contact-blurb {
+    margin: 3em 0;
+}
+
+/*=====footer=====*/
+    #homefooter,
+    #portfoliofooter,
+    #contactfooter {
+        display: inline-block;
+        padding-left: 2em;
+    }
+    
+    #backtotop {
+        display: none;
+    }
+
+    footer {
+        margin-bottom: 80px;
+    }
+}
+
+@media (min-width:1024px) {
+
+    /*=====header======*/
+    #home {
+        position: absolute;
+        left: 6%;
+    }
+
+    nav {
+       margin-top: 1em;
+       position: absolute;
+       right: 5%;
+       text-align: right;
+       }
+
+    .header-wrap {
+        padding-top: 3em;
+    }
+
+    nav,
+    nav li {
+        margin-right: 0;
+    }
+
+    .profile p {
+        font-size: 1.5em;
+    }
+
+
+    /*=====main=====*/
+    .portfolio    {
+        max-width: 32%;
+        margin: 0 auto;
+        padding: 1.5em 0;
+        display: inline-block;
+        
+    }
+
+    .wrapper {
+        padding: 0;
+        padding-top: 1em;
+    }
+
+    main {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    #contact-blurb {
+        font-size: 1.2em;
+        max-width: 95%;
+        margin: 2em auto;
+        
+    }
+    /*=====footer=====*/
+
+    footer {
+        margin-bottom: 0;
+        font-size: 1em;
+    }
+
+}
