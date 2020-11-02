@@ -366,6 +366,15 @@ article p {
         margin: 2em auto;
         
     }
+
+    .portfolio {
+        min-height: 400px;
+    }
+
+    .portfolio p {
+        min-height: 96px;
+    }
+    
     /*=====footer=====*/
 
     footer {
