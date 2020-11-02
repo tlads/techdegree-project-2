@@ -253,10 +253,6 @@ footer {
     
 }
 
-.wrapper {
- 
-}
-
 article p {
     width: 80%;
     margin: 0 auto;
@@ -356,7 +352,8 @@ article p {
     }
 
     main {
-        max-width: 95%;
+        width:95%;
+        max-width: 1150px;
         margin: 0 auto;
     }
 
